@@ -24,7 +24,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 <img src="http://g.recordit.co/GRnz6faNHx.gif" width=250><br>
 
-- Below is my Flix app run on my personal iPhone (which was in Dark Mode). 
+- Below is my Flix app ran on my personal iPhone (which was in Dark Mode). 
 
 <img src="http://g.recordit.co/2itQSwbI7S.gif" width=250><br>
 
