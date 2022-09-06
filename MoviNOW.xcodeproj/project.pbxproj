@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3049B22B03C7F60381CAD343 /* Pods_MoviNOWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511F5AAFACC8E6C0C834E36A /* Pods_MoviNOWTests.framework */; };
+		63BB7ECBDA3EA1EFDBD7144E /* Pods_MoviNOW_MoviNOWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82A8FFC02EF6CEB7A878A47 /* Pods_MoviNOW_MoviNOWUITests.framework */; };
+		B3E601C05C45CB2A5F655368 /* Pods_MoviNOW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C06F60B28C06BBA67F2E698 /* Pods_MoviNOW.framework */; };
+		B734CD9728B68116001DBACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734CD9628B68116001DBACE /* AppDelegate.swift */; };
+		B734CD9928B68116001DBACE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734CD9828B68116001DBACE /* SceneDelegate.swift */; };
+		B734CD9B28B68116001DBACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734CD9A28B68116001DBACE /* ViewController.swift */; };
+		B734CD9E28B68116001DBACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B734CD9C28B68116001DBACE /* Main.storyboard */; };
+		B734CDA028B68118001DBACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B734CD9F28B68118001DBACE /* Assets.xcassets */; };
+		B734CDA328B68118001DBACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B734CDA128B68118001DBACE /* LaunchScreen.storyboard */; };
+		B734CDAE28B68118001DBACE /* MoviNOWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734CDAD28B68118001DBACE /* MoviNOWTests.swift */; };
+		B734CDB828B68119001DBACE /* MoviNOWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734CDB728B68119001DBACE /* MoviNOWUITests.swift */; };
+		B734CDBA28B68119001DBACE /* MoviNOWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B734CDB928B68119001DBACE /* MoviNOWUITestsLaunchTests.swift */; };
+		B7D7409528C668B50087E677 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D7409428C668B50087E677 /* MovieCell.swift */; };
+		B7D7409828C6768B0087E677 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = B7D7409728C6768B0087E677 /* AlamofireImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B734CDAA28B68118001DBACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B734CD8B28B68115001DBACE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B734CD9228B68116001DBACE;
+			remoteInfo = MoviNOW;
+		};
+		B734CDB428B68119001DBACE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B734CD8B28B68115001DBACE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B734CD9228B68116001DBACE;
+			remoteInfo = MoviNOW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C04194DF4AFF071C1BD4F94 /* Pods-MoviNOW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviNOW.release.xcconfig"; path = "Target Support Files/Pods-MoviNOW/Pods-MoviNOW.release.xcconfig"; sourceTree = "<group>"; };
+		29BB4DCFEFF4190B4F22D191 /* Pods-MoviNOW-MoviNOWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviNOW-MoviNOWUITests.debug.xcconfig"; path = "Target Support Files/Pods-MoviNOW-MoviNOWUITests/Pods-MoviNOW-MoviNOWUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C06F60B28C06BBA67F2E698 /* Pods_MoviNOW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviNOW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511F5AAFACC8E6C0C834E36A /* Pods_MoviNOWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviNOWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8189270F13B64F140E5F9FA6 /* Pods-MoviNOWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviNOWTests.debug.xcconfig"; path = "Target Support Files/Pods-MoviNOWTests/Pods-MoviNOWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		878C14EBEE79FBEB6BAD264B /* Pods-MoviNOW-MoviNOWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviNOW-MoviNOWUITests.release.xcconfig"; path = "Target Support Files/Pods-MoviNOW-MoviNOWUITests/Pods-MoviNOW-MoviNOWUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A82A8FFC02EF6CEB7A878A47 /* Pods_MoviNOW_MoviNOWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoviNOW_MoviNOWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B734CD9328B68116001DBACE /* MoviNOW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviNOW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B734CD9628B68116001DBACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B734CD9828B68116001DBACE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B734CD9A28B68116001DBACE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B734CD9D28B68116001DBACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B734CD9F28B68118001DBACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B734CDA228B68118001DBACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B734CDA428B68118001DBACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B734CDA928B68118001DBACE /* MoviNOWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviNOWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B734CDAD28B68118001DBACE /* MoviNOWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviNOWTests.swift; sourceTree = "<group>"; };
+		B734CDB328B68119001DBACE /* MoviNOWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviNOWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B734CDB728B68119001DBACE /* MoviNOWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviNOWUITests.swift; sourceTree = "<group>"; };
+		B734CDB928B68119001DBACE /* MoviNOWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviNOWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7D7409428C668B50087E677 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		B923F9F94946C9884E3BCC43 /* Pods-MoviNOWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviNOWTests.release.xcconfig"; path = "Target Support Files/Pods-MoviNOWTests/Pods-MoviNOWTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8CEA67F42CA925431900D26 /* Pods-MoviNOW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviNOW.debug.xcconfig"; path = "Target Support Files/Pods-MoviNOW/Pods-MoviNOW.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B734CD9028B68116001DBACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D7409828C6768B0087E677 /* AlamofireImage in Frameworks */,
+				B3E601C05C45CB2A5F655368 /* Pods_MoviNOW.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734CDA628B68118001DBACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3049B22B03C7F60381CAD343 /* Pods_MoviNOWTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734CDB028B68119001DBACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BB7ECBDA3EA1EFDBD7144E /* Pods_MoviNOW_MoviNOWUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344BF47BB733319C3CCDB3FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C06F60B28C06BBA67F2E698 /* Pods_MoviNOW.framework */,
+				A82A8FFC02EF6CEB7A878A47 /* Pods_MoviNOW_MoviNOWUITests.framework */,
+				511F5AAFACC8E6C0C834E36A /* Pods_MoviNOWTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B734CD8A28B68115001DBACE = {
+			isa = PBXGroup;
+			children = (
+				B734CD9528B68116001DBACE /* MoviNOW */,
+				B734CDAC28B68118001DBACE /* MoviNOWTests */,
+				B734CDB628B68119001DBACE /* MoviNOWUITests */,
+				B734CD9428B68116001DBACE /* Products */,
+				C3A47B60CC1F979098CEB73D /* Pods */,
+				344BF47BB733319C3CCDB3FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B734CD9428B68116001DBACE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B734CD9328B68116001DBACE /* MoviNOW.app */,
+				B734CDA928B68118001DBACE /* MoviNOWTests.xctest */,
+				B734CDB328B68119001DBACE /* MoviNOWUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B734CD9528B68116001DBACE /* MoviNOW */ = {
+			isa = PBXGroup;
+			children = (
+				B734CD9628B68116001DBACE /* AppDelegate.swift */,
+				B734CD9828B68116001DBACE /* SceneDelegate.swift */,
+				B734CD9A28B68116001DBACE /* ViewController.swift */,
+				B734CD9C28B68116001DBACE /* Main.storyboard */,
+				B734CD9F28B68118001DBACE /* Assets.xcassets */,
+				B734CDA128B68118001DBACE /* LaunchScreen.storyboard */,
+				B734CDA428B68118001DBACE /* Info.plist */,
+				B7D7409428C668B50087E677 /* MovieCell.swift */,
+			);
+			path = MoviNOW;
+			sourceTree = "<group>";
+		};
+		B734CDAC28B68118001DBACE /* MoviNOWTests */ = {
+			isa = PBXGroup;
+			children = (
+				B734CDAD28B68118001DBACE /* MoviNOWTests.swift */,
+			);
+			path = MoviNOWTests;
+			sourceTree = "<group>";
+		};
+		B734CDB628B68119001DBACE /* MoviNOWUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B734CDB728B68119001DBACE /* MoviNOWUITests.swift */,
+				B734CDB928B68119001DBACE /* MoviNOWUITestsLaunchTests.swift */,
+			);
+			path = MoviNOWUITests;
+			sourceTree = "<group>";
+		};
+		C3A47B60CC1F979098CEB73D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8CEA67F42CA925431900D26 /* Pods-MoviNOW.debug.xcconfig */,
+				0C04194DF4AFF071C1BD4F94 /* Pods-MoviNOW.release.xcconfig */,
+				29BB4DCFEFF4190B4F22D191 /* Pods-MoviNOW-MoviNOWUITests.debug.xcconfig */,
+				878C14EBEE79FBEB6BAD264B /* Pods-MoviNOW-MoviNOWUITests.release.xcconfig */,
+				8189270F13B64F140E5F9FA6 /* Pods-MoviNOWTests.debug.xcconfig */,
+				B923F9F94946C9884E3BCC43 /* Pods-MoviNOWTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B734CD9228B68116001DBACE /* MoviNOW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B734CDBD28B68119001DBACE /* Build configuration list for PBXNativeTarget "MoviNOW" */;
+			buildPhases = (
+				DB27DE06EC97829DC01536B7 /* [CP] Check Pods Manifest.lock */,
+				B734CD8F28B68116001DBACE /* Sources */,
+				B734CD9028B68116001DBACE /* Frameworks */,
+				B734CD9128B68116001DBACE /* Resources */,
+				2F73E4BEBFC08F557C92B22A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoviNOW;
+			packageProductDependencies = (
+				B7D7409728C6768B0087E677 /* AlamofireImage */,
+			);
+			productName = MoviNOW;
+			productReference = B734CD9328B68116001DBACE /* MoviNOW.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B734CDA828B68118001DBACE /* MoviNOWTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B734CDC028B68119001DBACE /* Build configuration list for PBXNativeTarget "MoviNOWTests" */;
+			buildPhases = (
+				2F427E520B0DDF9DFDE27580 /* [CP] Check Pods Manifest.lock */,
+				B734CDA528B68118001DBACE /* Sources */,
+				B734CDA628B68118001DBACE /* Frameworks */,
+				B734CDA728B68118001DBACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B734CDAB28B68118001DBACE /* PBXTargetDependency */,
+			);
+			name = MoviNOWTests;
+			productName = MoviNOWTests;
+			productReference = B734CDA928B68118001DBACE /* MoviNOWTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B734CDB228B68119001DBACE /* MoviNOWUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B734CDC328B68119001DBACE /* Build configuration list for PBXNativeTarget "MoviNOWUITests" */;
+			buildPhases = (
+				1C9D17219999ECCEE4C8DAE9 /* [CP] Check Pods Manifest.lock */,
+				B734CDAF28B68119001DBACE /* Sources */,
+				B734CDB028B68119001DBACE /* Frameworks */,
+				B734CDB128B68119001DBACE /* Resources */,
+				A7BF2025B114916C94ECA32B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B734CDB528B68119001DBACE /* PBXTargetDependency */,
+			);
+			name = MoviNOWUITests;
+			productName = MoviNOWUITests;
+			productReference = B734CDB328B68119001DBACE /* MoviNOWUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B734CD8B28B68115001DBACE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B734CD9228B68116001DBACE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B734CDA828B68118001DBACE = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B734CD9228B68116001DBACE;
+					};
+					B734CDB228B68119001DBACE = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B734CD9228B68116001DBACE;
+					};
+				};
+			};
+			buildConfigurationList = B734CD8E28B68115001DBACE /* Build configuration list for PBXProject "MoviNOW" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B734CD8A28B68115001DBACE;
+			packageReferences = (
+				B7D7409628C6768B0087E677 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = B734CD9428B68116001DBACE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B734CD9228B68116001DBACE /* MoviNOW */,
+				B734CDA828B68118001DBACE /* MoviNOWTests */,
+				B734CDB228B68119001DBACE /* MoviNOWUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B734CD9128B68116001DBACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B734CDA328B68118001DBACE /* LaunchScreen.storyboard in Resources */,
+				B734CDA028B68118001DBACE /* Assets.xcassets in Resources */,
+				B734CD9E28B68116001DBACE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734CDA728B68118001DBACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734CDB128B68119001DBACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C9D17219999ECCEE4C8DAE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoviNOW-MoviNOWUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F427E520B0DDF9DFDE27580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoviNOWTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F73E4BEBFC08F557C92B22A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoviNOW/Pods-MoviNOW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoviNOW/Pods-MoviNOW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoviNOW/Pods-MoviNOW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7BF2025B114916C94ECA32B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoviNOW-MoviNOWUITests/Pods-MoviNOW-MoviNOWUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoviNOW-MoviNOWUITests/Pods-MoviNOW-MoviNOWUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoviNOW-MoviNOWUITests/Pods-MoviNOW-MoviNOWUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB27DE06EC97829DC01536B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoviNOW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B734CD8F28B68116001DBACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B734CD9B28B68116001DBACE /* ViewController.swift in Sources */,
+				B734CD9728B68116001DBACE /* AppDelegate.swift in Sources */,
+				B7D7409528C668B50087E677 /* MovieCell.swift in Sources */,
+				B734CD9928B68116001DBACE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734CDA528B68118001DBACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B734CDAE28B68118001DBACE /* MoviNOWTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B734CDAF28B68119001DBACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B734CDBA28B68119001DBACE /* MoviNOWUITestsLaunchTests.swift in Sources */,
+				B734CDB828B68119001DBACE /* MoviNOWUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B734CDAB28B68118001DBACE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B734CD9228B68116001DBACE /* MoviNOW */;
+			targetProxy = B734CDAA28B68118001DBACE /* PBXContainerItemProxy */;
+		};
+		B734CDB528B68119001DBACE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B734CD9228B68116001DBACE /* MoviNOW */;
+			targetProxy = B734CDB428B68119001DBACE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B734CD9C28B68116001DBACE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B734CD9D28B68116001DBACE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B734CDA128B68118001DBACE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B734CDA228B68118001DBACE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B734CDBB28B68119001DBACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B734CDBC28B68119001DBACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B734CDBE28B68119001DBACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CEA67F42CA925431900D26 /* Pods-MoviNOW.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QJHV93DMC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviNOW/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linadeveloper004.MoviNOW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B734CDBF28B68119001DBACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C04194DF4AFF071C1BD4F94 /* Pods-MoviNOW.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QJHV93DMC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviNOW/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linadeveloper004.MoviNOW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B734CDC128B68119001DBACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8189270F13B64F140E5F9FA6 /* Pods-MoviNOWTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QJHV93DMC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linadeveloper004.MoviNOWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoviNOW.app/MoviNOW";
+			};
+			name = Debug;
+		};
+		B734CDC228B68119001DBACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B923F9F94946C9884E3BCC43 /* Pods-MoviNOWTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QJHV93DMC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linadeveloper004.MoviNOWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoviNOW.app/MoviNOW";
+			};
+			name = Release;
+		};
+		B734CDC428B68119001DBACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BB4DCFEFF4190B4F22D191 /* Pods-MoviNOW-MoviNOWUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QJHV93DMC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linadeveloper004.MoviNOWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoviNOW;
+			};
+			name = Debug;
+		};
+		B734CDC528B68119001DBACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878C14EBEE79FBEB6BAD264B /* Pods-MoviNOW-MoviNOWUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QJHV93DMC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linadeveloper004.MoviNOWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoviNOW;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B734CD8E28B68115001DBACE /* Build configuration list for PBXProject "MoviNOW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B734CDBB28B68119001DBACE /* Debug */,
+				B734CDBC28B68119001DBACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B734CDBD28B68119001DBACE /* Build configuration list for PBXNativeTarget "MoviNOW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B734CDBE28B68119001DBACE /* Debug */,
+				B734CDBF28B68119001DBACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B734CDC028B68119001DBACE /* Build configuration list for PBXNativeTarget "MoviNOWTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B734CDC128B68119001DBACE /* Debug */,
+				B734CDC228B68119001DBACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B734CDC328B68119001DBACE /* Build configuration list for PBXNativeTarget "MoviNOWUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B734CDC428B68119001DBACE /* Debug */,
+				B734CDC528B68119001DBACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7D7409628C6768B0087E677 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7D7409728C6768B0087E677 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7D7409628C6768B0087E677 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B734CD8B28B68115001DBACE /* Project object */;
+}
